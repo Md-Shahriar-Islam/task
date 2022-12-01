@@ -1,0 +1,15 @@
+.logo {
+    width: 164.21px;
+    height: 60px;
+    margin: 62px 0 0 56px;
+}
+
+.background {
+    width: 612px;
+    height: 430px;
+    margin: 110px 0 0 128px;
+}
+
+.total {
+    overflow-y: hidden;
+}
