@@ -1,0 +1,50 @@
+.page-display {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.header {
+    padding: 109px 0 0;
+}
+
+.input-field:focus {
+    outline: none;
+
+}
+
+.head-text {
+    margin: 120px 0 120px 0;
+}
+
+.input-field {
+    border-bottom: 2px solid rgba(177, 171, 171, 0.993);
+    padding-left: 10px;
+    width: 100%;
+}
+
+.input-field1 {
+    margin-bottom: 40px;
+}
+
+.input-field2 {
+    margin-top: 44px;
+    margin-bottom: 40px;
+}
+
+
+.box {
+    margin: 19px 35px 11px 0px;
+
+}
+
+.box-inside {
+    margin: 0 74px 0 74px;
+}
+
+.button {
+
+    display: block;
+    margin: 0 auto;
+    color: white;
+}
