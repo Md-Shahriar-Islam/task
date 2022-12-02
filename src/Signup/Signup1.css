@@ -1,6 +1,6 @@
 .page-display {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.6fr 1fr;
 
 }
 
@@ -15,6 +15,7 @@
 
 .head-text {
     margin: 120px 0 120px 0;
+    font-weight: bold;
 }
 
 .input-field {
@@ -34,7 +35,7 @@
 
 
 .box {
-    margin: 19px 35px 11px 0px;
+    margin: 19px 30px 11px 0px;
 
 }
 
@@ -42,9 +43,32 @@
     margin: 0 74px 0 74px;
 }
 
-.button {
+.arrow-logo {
+    font-size: 24px;
+}
 
-    display: block;
+.button {
     margin: 0 auto;
     color: white;
+    background-color: #3B8BEA;
+    border: 1px solid #3B8BEA;
+}
+
+.button:hover {
+    border: 1px solid #3B8BEA;
+    background-color: white;
+    color: #3B8BEA;
+}
+
+.btn-global {
+    padding: 0 10px 0 10px;
+}
+
+.login {
+    color: #3B8BEA;
+    border-bottom: 1px solid #3B8BEA;
+}
+
+.end-section {
+    margin: 100px 0 20px 20px;
 }

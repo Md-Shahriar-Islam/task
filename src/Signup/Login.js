@@ -1,14 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Background from '../Background/Background';
-import './Signup1.css'
-import { FiArrowRight } from 'react-icons/fi';
-import { Link, useNavigate } from 'react-router-dom';
+import './Login.css'
 
-const Signup1 = () => {
-    const navigate = useNavigate()
-    const signup2 = () => {
-        navigate('/signup2')
-    }
+const Login = () => {
     return (
         <div className='page-display'>
             <div>
@@ -18,17 +13,17 @@ const Signup1 = () => {
             <div className='box shadow-2xl'>
 
                 <div className='box-inside'>
-                    <h1 className='text-center head-text'>SignUp Form</h1>
-                    <form onSubmit={signup2}>
+                    <h1 className='text-center head-text'>Log in Form</h1>
+                    <form>
                         <input className='input-field input-field1' type='text' placeholder='Write First Name'></input><br></br>
-                        <input className='input-field input-field2' type='text' placeholder='Write Last Name'></input><br></br>
+                        <input className='input-field input-field2-login' type='text' placeholder='Write Last Name'></input><br></br>
+                        <p className='hints'>your password must be 8 character</p>
                         <div className='flex flex-col justify-center '>
                             <div className='btn button'>
-                                <input className='btn-global' type='submit' value='Next Step'></input><FiArrowRight className='arrow-logo'></FiArrowRight>
-
+                                <input className='btn-global' type='submit' value='Log In'></input>
                             </div>
                             <div className="end-section">
-                                <p className="ending">Already Have an Account? <Link className='login' to='/login'>LOGIN HERE</Link></p>
+                                <p className="ending">Don't Have an Account? <Link className='login' to='/'>SIGNUP HERE</Link></p>
                             </div>
                         </div>
                     </form>
@@ -43,4 +38,4 @@ const Signup1 = () => {
     );
 };
 
-export default Signup1;
+export default Login;
