@@ -11,7 +11,7 @@ import Signup3 from './Signup/Signup3'
 
 function App() {
   return (
-    <div>
+    <div className='body-background-color'>
 
       <Routes>
         <Route path='/' element={<Signup1></Signup1>}></Route>

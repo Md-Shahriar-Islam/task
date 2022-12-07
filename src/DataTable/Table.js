@@ -3,21 +3,30 @@ import TableDesign from './TableDesign';
 import logo from '../Background/logo.svg'
 
 const Table = () => {
+
     const [data, setData] = useState({})
     const modifiedData = []
     const token = sessionStorage.getItem('token')
-    useEffect(() => {
-        fetch('https://test.nexisltd.com/test', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            },
 
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await fetch('https://test.nexisltd.com/test', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+
+            }
+            )
+            const resData = await data.json()
+            setData(resData)
         }
-        )
-            .then(res => res.json())
-            .then(data => setData(data))
+        fetchData()
+
+
 
     }, [token])
     for (const i in data) {
