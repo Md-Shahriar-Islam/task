@@ -1,0 +1,26 @@
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+.table-background {
+    background-color: #1678CB;
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 5px 0;
+
+
+}
+
+.table-title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+
+}

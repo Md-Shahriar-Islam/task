@@ -48,7 +48,10 @@
 }
 
 .button {
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
     color: white;
     background-color: #3B8BEA;
     border: 1px solid #3B8BEA;
@@ -71,4 +74,38 @@
 
 .end-section {
     margin: 100px 0 20px 20px;
+}
+
+.back {
+    color: #767676;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ---------------------css for signup2 page *-----------------------------*/
+.signup2field {
+    display: flex;
+}
+
+.field1 {
+    width: 20%;
+    border-bottom: 2px solid rgba(177, 171, 171, 0.993);
+    padding-left: 5px;
+}
+
+.field1:focus,
+.field2:focus {
+    outline: none;
+}
+
+.field2 {
+    width: 80%;
+    border-bottom: 2px solid rgba(177, 171, 171, 0.993);
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+/* ---------------------css for signup2 page *-----------------------------*/
+.final-signup {
+    margin-bottom: 100px;
 }
