@@ -4,6 +4,7 @@ import logo from '../Background/logo.svg'
 
 const Table = () => {
 
+
     const [data, setData] = useState({})
     const modifiedData = []
     const token = sessionStorage.getItem('token')
@@ -22,24 +23,24 @@ const Table = () => {
             }
             )
             const resData = await data.json()
-            setData(resData)
+            await setData(resData)
         }
         fetchData()
 
 
 
-    }, [token])
+    }, [data])
     for (const i in data) {
         modifiedData.push(data[i])
 
     }
     // console.log(modifiedData)
-
+    if (!data) return 'loading.........';
 
 
 
     return (
-        <div >
+        <div className="body-background-color">
             <div className='logo'>
                 <img src={logo} alt='logo'></img>
 

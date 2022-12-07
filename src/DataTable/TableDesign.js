@@ -3,14 +3,24 @@ import './Table.css'
 import logo from '../Background/logo.svg'
 
 const TableDesign = (props) => {
-    const { name } = props.data
-    const date = Object.keys(props.data.attendance)[9]
-    const status1 = props.data.attendance
-    const { status } = status1[date]
-    console.log(status)
+    let date
+    let status1
+    let status
+    const { name } = props?.data
+    if (name) {
+        date = Object.keys(props?.data?.attendance)[9]
+        status1 = props?.data?.attendance
+        status = status1[date].status
+
+    }
+
+
+
+    // console.log(status)
     // const date = Object.keys(props.data.status)
+    if (!name) return 'loading........'
     return (
-        <div>
+        <div className='body-background-color'>
             <div className='table'>
                 <div>
                     <p>{date}</p>

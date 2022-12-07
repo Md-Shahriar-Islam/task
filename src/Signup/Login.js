@@ -29,6 +29,7 @@ const Login = () => {
                 .catch((error) => {
                     console.error('Error:', error);
                 });
+            const token = sessionStorage.getItem('token');
             navigate('/table')
 
 
