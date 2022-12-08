@@ -54,7 +54,7 @@ const Login = () => {
                 <div className='box-inside'>
                     <h1 className='text-center head-text'>Log in Form</h1>
                     <form onSubmit={login}>
-                        <input className='input-field input-field1' name='email' type='text' placeholder='Write Email Address'></input><br></br>
+                        <input autocomplete='off' className='input-field input-field1' name='email' type='text' placeholder='Write Email Address'></input><br></br>
                         <input className='input-field input-field2-login' name='password' type='password' placeholder='Write Password'></input><br></br>
                         <p className='hints'>your password must be 8 character</p>
                         <div className='flex flex-col justify-center '>

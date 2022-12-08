@@ -11,6 +11,7 @@
 
 .input-field:focus {
     outline: none;
+    background-color: white;
 
 }
 
@@ -99,6 +100,7 @@
 .field1:focus,
 .field2:focus {
     outline: none;
+    background-color: white;
 }
 
 .field2 {

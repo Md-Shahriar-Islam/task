@@ -33,10 +33,10 @@ const Signup2 = () => {
                     <h1 className='text-center head-text'>SignUp Form</h1>
                     <form onSubmit={signup2}>
                         <div className='signup2field'>
-                            <input className='field1' name='country_code' placeholder='+880'></input>
-                            <input className='field2' name='phone_number' type='text' placeholder='1XXXXXXXXX'></input>
+                            <input autocomplete='off' className='field1' name='country_code' placeholder='+880'></input>
+                            <input autocomplete='off' className='field2' name='phone_number' type='text' placeholder='1XXXXXXXXX'></input>
                         </div>
-                        <input className='input-field input-field2' name='email' type='email' placeholder='Write Email Address'></input><br></br>
+                        <input autocomplete='off' className='input-field input-field2' name='email' type='email' placeholder='Write Email Address'></input><br></br>
                         <div className='flex flex-col justify-center '>
                             <div className='flex items-center justify-evenly mx-10'>
                                 <div>

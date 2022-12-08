@@ -25,8 +25,8 @@ const Signup1 = () => {
                 <div className='box-inside'>
                     <h1 className='text-center head-text'>SignUp Form</h1>
                     <form onSubmit={signup2}>
-                        <input className='input-field input-field1' name='first_name' type='text' placeholder='Write First Name'></input><br></br>
-                        <input className='input-field input-field2' name='last_name' type='text' placeholder='Write Last Name'></input><br></br>
+                        <input className='input-field input-field1' name='first_name' type='text' placeholder='Write First Name' autocomplete='off'></input><br></br>
+                        <input className='input-field input-field2' name='last_name' type='text' placeholder='Write Last Name' autocomplete='off'></input><br></br>
                         <div className='flex flex-col justify-center '>
                             <div className='flex justify-center'>
                                 <button className='  button drop-shadow-lg' type='submit' value='Next Step'>Next Step <FiArrowRight className='arrow-logo'></FiArrowRight></button>
