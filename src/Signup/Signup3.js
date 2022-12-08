@@ -54,7 +54,7 @@ const Signup3 = () => {
                 <div className='box-inside'>
                     <h1 className='text-center head-text'>SignUp Form</h1>
                     <form onSubmit={signup}>
-                        <input className='input-field' type='text' name='password' placeholder='Write Password'></input><br></br>
+                        <input className='input-field' type='password' name='password' placeholder='Write Password'></input><br></br>
                         <p className='hints final-signup'>your password must be 8 character</p>
                         <div className='flex flex-col justify-center '>
                             <div className='flex items-center justify-evenly mx-10'>

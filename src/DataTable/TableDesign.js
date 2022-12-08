@@ -20,23 +20,25 @@ const TableDesign = (props) => {
     // const date = Object.keys(props.data.status)
     if (!name) return 'loading........'
     return (
-        <div className='body-background-color'>
-            <div className='table'>
-                <div>
-                    <p>{date}</p>
+        <div className='table-page'>
+            <div className='body-background-color'>
+                <div className='table'>
+                    <div>
+                        <p>{date}</p>
 
-                </div>
-                <div>
-                    <p>{name}</p>
+                    </div>
+                    <div>
+                        <p>{name}</p>
 
-                </div>
-                <div>
-                    <p>{status}</p>
+                    </div>
+                    <div>
+                        <p>{status}</p>
+
+                    </div>
 
                 </div>
 
             </div>
-
         </div>
     );
 };

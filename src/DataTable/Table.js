@@ -40,34 +40,36 @@ const Table = () => {
 
 
     return (
-        <div className="body-background-color">
-            <div className='logo'>
-                <img src={logo} alt='logo'></img>
+        <div className='table-page'>
+            <div className="body-background-color">
+                <div className='logo'>
+                    <img src={logo} alt='logo'></img>
 
-
-            </div>
-            <div className='table-background'>
-                <h1 className='table-title'>Attendance Information</h1>
-            </div>
-            <div className='table'>
-                <div>
-                    <h1 className='font-bold'>Date</h1>
 
                 </div>
-                <div>
-                    <h1 className='font-bold'>employee name</h1>
+                <div className='table-background'>
+                    <h1 className='table-title'>Attendance Information</h1>
+                </div>
+                <div className='table'>
+                    <div>
+                        <h1 className='font-bold'>Date</h1>
+
+                    </div>
+                    <div>
+                        <h1 className='font-bold'>employee name</h1>
+
+                    </div>
+                    <div>
+                        <h1 className='font-bold'>status</h1>
+
+                    </div>
 
                 </div>
-                <div>
-                    <h1 className='font-bold'>status</h1>
-
-                </div>
+                {
+                    modifiedData.map(b => <TableDesign key={b.id} data={b}></TableDesign>)
+                }
 
             </div>
-            {
-                modifiedData.map(b => <TableDesign key={b.id} data={b}></TableDesign>)
-            }
-
         </div>
     );
 };
